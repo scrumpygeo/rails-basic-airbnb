@@ -7,9 +7,10 @@
  <div class="card m-2 "  style="width: 20rem;">
     <div class="card-body bg-light">
     <h4 class="card-title text-dark"><%= flat.name %></h4>
-    <h6 class="card-subtitle "><%= flat.address %></h6>
-    <p>Price per night: £<%= flat.price_per_night %></p>
-      <i class="material-icons mr-2 pt-1">people</i><span><%= flat.number_of_guests %></span>
+    <h6 class="card-subtitle mb-3 "><%= flat.address %></h6>
+   
+      <i class="material-icons mr-2 "  style="vertical-align: middle !important">people</i><span><%= flat.number_of_guests %></span>
+       <i class="material-icons mr-2" style="vertical-align: middle !important">euro_symbol</i><span><%= flat.price_per_night %></span>
     </div>
     <div class="card-footer text-muted bg-white"><a href="#">More info</a></div>
 </div>
@@ -17,3 +18,4 @@
     
 <% end %>
 </div>
+

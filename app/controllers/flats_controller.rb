@@ -2,7 +2,12 @@ class FlatsController < ApplicationController
     before_action :find_flat, only: [ :show, :edit, :update, :destroy ]
 
     def index
-        @flats = Flat.all
+        if params[:query].present?
+            @query = params[:query]  # for view: to flag when query used
+            @flats = Flat.where("name LIKE ?", "%#{@query}%")   # sanitize
+        else
+            @flats = Flat.all
+        end
     end
 
     def new

@@ -12,6 +12,13 @@
                 <h3>A bit more about this flat...</h3>
                 <p><%= @flat.description %></p>
             </div>
+
+            <div class="card-body bg-light  my-3">
+                <h3>Details </h3>
+                <i class="material-icons mr-2" style="vertical-align: middle !important">people</i><span><%= @flat.number_of_guests %></span>
+                <i class="material-icons mx-2" style="vertical-align: middle !important">euro_symbol</i><span><%= @flat.price_per_night %></span>
+            </div>
+
         </div>
        
 
@@ -19,49 +26,35 @@
             <div class="card-body bg-light">
                 <p>Book this place!</p>
 
-
-
-        <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="">From:</span>
-            </div>
-            <input class="form-control" type="text" placeholder="12/06/2020">      
-        </div>
-        <div class="input-group mb-2">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="">To:</span>
-            </div>
-            <input class="form-control" type="text" placeholder="19/06/2020">      
-        </div>
-
-
-
-
-
-
-
-
-<button type="button" class="btn btn-success btn-lg btn-block py-2">Book</button>
-
-            </div>
-             <div class="card-body bg-light  my-3">
-                <h3>Details </h3>
-                <i class="material-icons mr-2" style="vertical-align: middle !important">people</i><span><%= @flat.number_of_guests %></span>
-                <i class="material-icons mx-2" style="vertical-align: middle !important">euro_symbol</i><span><%= @flat.price_per_night %></span>
-            </div>
-
-           <div class="card-body bg-light d-flex     justify-content-between">
-                <div>
-                   <p class="mr-3 mt-1">Share</p>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="">From:</span>
                 </div>
-                <div>
-                    <i class="fa fa-facebook-square fa-2x mr-2"></i>
-                    <i class="fa fa-twitter-square fa-2x mr-2"></i>
-                    <i class="fa fa-pinterest-square fa-2x mr-2"></i>
-                    <i class="fa fa-envelope-square fa-2x"></i>
+                <input class="form-control" type="text" placeholder="12/06/2020">      
+            </div>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="">To:</span>
+                </div>
+                <input class="form-control" type="text" placeholder="19/06/2020">      
+            </div>
+
+            <button type="button" class="btn btn-success btn-lg btn-block  py-2">Book</button>
+
+        </div>
+ 
+        <div class="card-body bg-light d-flex justify-content-between mt-3">
+            <div>
+                <p class="mr-3 mt-1">Share</p>
+            </div>
+            <div>
+                <i class="fa fa-facebook-square fa-2x mr-2"></i>
+                <i class="fa fa-twitter-square fa-2x mr-2"></i>
+                <i class="fa fa-pinterest-square fa-2x mr-2"></i>
+                <i class="fa fa-envelope-square fa-2x"></i>
                 </div>
             </div>
-
         </div>
+
     </div>
 </div>
